@@ -1,0 +1,15 @@
+---
+
+  - name: Copy Syslog configuration into place
+    file:
+      src: syslog-ng.conf
+      dest: /etc/syslog-ng/syslog-ng.conf
+      owner: root
+      group: root
+    register: result
+
+
+  - name: Reload Syslog configuration
+    command: "pkill -HUP syslog-ng"
+
+

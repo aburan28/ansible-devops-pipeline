@@ -1,0 +1,9 @@
+---
+
+
+
+  - name: Open Inbound traffic for these ports
+    command: "iptables -A INPUT -p {{ protocol }} --dport {{ port }} -m state --state NEW -j
+ACCEPT"
+    with_items:
+      - { protocol: tcp, port: 80}

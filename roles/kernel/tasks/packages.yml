@@ -1,0 +1,13 @@
+---
+
+
+
+ - name: Ensure these packages are not installed
+   command: "dpkg -s {{ name }}"
+   with_items:
+     - ldap-utils
+
+ - name: Ensure modules named are not loaded
+   command: "modprobe -n -v {{ name }}"
+   with_items:
+     - tipc

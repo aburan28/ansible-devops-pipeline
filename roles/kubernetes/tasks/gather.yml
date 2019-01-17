@@ -1,0 +1,21 @@
+---
+- name: Fetch a list of namespaces
+  set_fact:
+    projects: "{{ lookup('k8s', api_version='v1', kind='Namespace') }}"
+
+- name: Fetch all deployments
+  set_fact:
+    deployments: "{{ lookup('k8s', kind='Deployment', namespace='testing') }}"
+
+- name: Fetch all deployments in a namespace
+  set_fact:
+    deployments: "{{ lookup('k8s', kind='Deployment', namespace='testing') }}"
+
+- name: Fetch a specific deployment by name
+  set_fact:
+    deployments: "{{ lookup('k8s', kind='Deployment', namespace='testing', resource_name='elastic') }}"
+
+- name: Fetch with label selector
+  set_fact:
+    service: "{{ lookup('k8s', kind='Service', label_selector='app=galaxy') }}"
+

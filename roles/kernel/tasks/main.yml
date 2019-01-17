@@ -1,0 +1,16 @@
+---
+grub2-efi shim grub2-tools
+
+
+
+  - name: Setup Repos for yum or apt
+    command: yum update -y
+    register: result
+  - na
+  - name: Install all packages
+
+
+
+  - include: iptables.yml
+  - include: packages.yml
+  - include: harden.yml
