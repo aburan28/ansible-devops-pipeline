@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f906ca9-9cff-4e27-9d63-11a8d461783d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/roles/aws/tasks/ec2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/aws/tasks/efs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/aws/tasks/rds.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/aws/tasks/s3.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/aws/tasks/vpc.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/roles/kernel/tasks/main.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -127,8 +132,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-63" />
-    <option name="y" value="945" />
+    <option name="y" value="73" />
     <option name="width" value="1680" />
     <option name="height" value="981" />
   </component>
@@ -140,7 +144,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ansible-devops-pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ansible-devops-pipeline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ansible-devops-pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ansible-devops-pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ansible-devops-pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ansible-devops-pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ansible-devops-pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ansible-devops-pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="vars" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -173,17 +202,18 @@
       <option name="presentableId" value="Default" />
       <updated>1547106176736</updated>
       <workItem from="1548511535505" duration="825000" />
-      <workItem from="1548668736064" duration="601000" />
+      <workItem from="1548668736064" duration="1617000" />
+      <workItem from="1548932517282" duration="1489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1426000" />
+    <option name="totallyTimeSpent" value="3931000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-63" y="945" width="1680" height="981" extended-state="0" />
+    <frame x="0" y="73" width="1680" height="981" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28667483" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2903423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -195,7 +225,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.13934426" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.5538642" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
@@ -242,8 +272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/roles/kernel/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-line="11" />
         </state>
       </provider>
     </entry>
