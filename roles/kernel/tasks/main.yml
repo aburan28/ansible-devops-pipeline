@@ -6,7 +6,7 @@ grub2-efi shim grub2-tools
   - name: Setup Repos for yum or apt
     command: yum update -y
     register: result
-  - na
+  - name:
   - name: Install all packages
 
 

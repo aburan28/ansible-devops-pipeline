@@ -6,10 +6,13 @@
     file:
       path: "/home/<username>/.ssh"
       state: directory
+    register: directory
+
   - name: create empty file
     file:
       path: "/home/<username>/.ssh/authorized_keys"
       state: touch
+
   - name: put pubkey
     lineinfile:
       path: "/home/<username>/.ssh/authorized_keys"
